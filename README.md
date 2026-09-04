@@ -73,14 +73,27 @@ export BBEH_BASE_URL=https://api.openai.com/v1   # any OpenAI-compatible gateway
 export BBEH_STUDENT_MODEL=gpt-4o-mini            # optional; see below
 ```
 
-Before spending anything, run the offline selftests — they need only numpy and
-no API access:
+Before spending anything, run the selftests. These five need only numpy — no
+API key, no benchmark data:
 
 ```bash
-python -m bbeh.reranker              # judge-reply parser invariants
-python -m bbeh.selftest_retrieval    # retrieval invariants
-python -m bbeh.selftest_run          # arm-parity and resume invariants
-cd realmem && python -m eval.selftest_retrieval
+python -m bbeh.prompts           # arm parity: empty memory slot == baseline prompt
+python -m bbeh.reranker          # judge-reply parser invariants (9 cases)
+python -m bbeh.jsonutil          # tolerant JSON extraction (15 cases)
+python -m bbeh.official_eval     # the scorer itself
+python -m bbeh.selftest_analyze  # equivalence/superiority test logic
+cd realmem && python -m eval.selftest_retrieval && cd ..
+```
+
+Two more exercise the full retrieval path and therefore need a throwaway bank
+first. They cost nothing — the dry-run client fabricates responses and refuses
+to write into a non-`DRYRUN` cache — but they do need the BBEH split to exist,
+so run them after the first two steps of the BBEH pipeline below:
+
+```bash
+python -m bbeh.build_memory build --version-id DRYRUN-zpd --method zpd --dry-run
+python -m bbeh.selftest_retrieval
+python -m bbeh.selftest_run
 ```
 
 Then check connectivity, which costs a few tokens and tells you *which* of
