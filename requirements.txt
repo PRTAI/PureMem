@@ -1,0 +1,30 @@
+# PureMem — runtime dependencies.
+#
+#   pip install -r requirements.txt
+#
+# The offline selftests need only numpy, so you can validate the retrieval
+# logic before installing torch or configuring any API key:
+#
+#   python -m bbeh.reranker                # parser invariants
+#   python -m bbeh.selftest_retrieval      # retrieval invariants
+#   cd realmem && python -m eval.selftest_retrieval
+
+numpy>=1.24
+
+# OpenAI-compatible client. Any gateway works; set BBEH_BASE_URL / BBEH_API_KEY.
+openai>=1.0.0
+tqdm
+
+# Query and memory encoding (all-MiniLM-L6-v2). Pulls in torch (~2.5 GB).
+# Without it the harness falls back to bag-of-words hashing, which is fine for
+# the selftests and useless for real numbers — pass --require-st to
+# bbeh.build_memory so a missing install fails loudly instead of silently
+# degrading the retriever.
+sentence-transformers>=2.2.0
+
+# Figures only (figure_script/*.py).
+matplotlib>=3.6
+
+# Optional: the external mem0 baseline on the RealMemBench track
+# (`run_eval.py --arms mem0`). Off by default.
+# mem0ai
