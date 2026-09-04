@@ -1,0 +1,31 @@
+{
+  "title": "Chorophobia",
+  "flavor_text": "All I wanted to do is head to a bar, have a drink, solve some puzzles... instead, all of my friends dragged me out dancing. To make matters worse, they've dragged me out to perform the latest dance craze, the P.P. Slide, and I don't remember the steps. There are two pairs of dancers on the dance floor, each facing their partner. Each dancer makes the same movements, relative to the center, at the same time. But which direction to they go, and for how many squares?",
+  "solution": "RAPIDLY",
+  "reasoning": [
+    {
+      "explanation": "Treat the lyrics as chess moves, with the number of notes beside the lyrics as the parameters for the move. Performt the moves for every person on the board.",
+      "figure": "figure1.png"
+    },
+    {
+      "explanation": "Extract the letters traced out by each dancer. Three of them reads LETTERS, RIGHT OF, DANELLE.",
+      "figure": null
+    },
+    {
+      "explanation": "Tracing the letters to the right of Danelle's letters gives the final answer to be \"RAPIDLY\".",
+      "figure": null
+    }
+  ],
+  "modality": [
+    "text",
+    "visual"
+  ],
+  "skills": [
+    "logic",
+    "knowledge",
+    "spatial",
+    "commonsense"
+  ],
+  "prompt": "\nYour task is to solve the following puzzle. The attached images are presented in the order\nthey are referenced in the text.\n\nThe puzzle's title is: Chorophobia\nThe puzzle's flavor text is: All I wanted to do is head to a bar, have a drink, solve some puzzles... instead, all of my friends dragged me out dancing. To make matters worse, they've dragged me out to perform the latest dance craze, the P.P. Slide, and I don't remember the steps. There are two pairs of dancers on the dance floor, each facing their partner. Each dancer makes the same movements, relative to the center, at the same time. But which direction to they go, and for how many squares?\n\n---\nWrite out a step-by-step solution to the puzzle. At the end of your solution, write your\nanswer in the following format:\nAnswer: <answer>\n",
+  "raw_output": ""
+}

@@ -1,0 +1,32 @@
+{
+  "version_id": "v_stratified_30_0ac69b",
+  "selector_method": "stratified",
+  "subset_size": 30,
+  "train_total": 530,
+  "round_num_legacy": null,
+  "n_triples_extracted": 181,
+  "n_patterns_after_dedup": 179,
+  "llm_calls": 181,
+  "llm_failed": 1,
+  "total_input_chars": 178461,
+  "total_output_chars": 64121,
+  "total_input_tokens_est": 44615,
+  "total_output_tokens_est": 16030,
+  "pattern_type_distribution": {
+    "extraction": 44,
+    "pattern_recognition": 36,
+    "spatial_transform": 34,
+    "mapping": 24,
+    "word_interpretation": 10,
+    "encoding": 9,
+    "indexing": 6,
+    "cipher": 5,
+    "ordering": 4,
+    "substitution": 2,
+    "acrostic": 2,
+    "counting": 2,
+    "anagram": 1
+  },
+  "seed": 42,
+  "timestamp": 1786428901.7489023
+}

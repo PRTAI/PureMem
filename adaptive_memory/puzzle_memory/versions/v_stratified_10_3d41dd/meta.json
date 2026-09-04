@@ -1,0 +1,30 @@
+{
+  "version_id": "v_stratified_10_3d41dd",
+  "selector_method": "stratified",
+  "subset_size": 10,
+  "train_total": 530,
+  "round_num_legacy": null,
+  "n_triples_extracted": 47,
+  "n_patterns_after_dedup": 47,
+  "llm_calls": 47,
+  "llm_failed": 0,
+  "total_input_chars": 46242,
+  "total_output_chars": 16043,
+  "total_input_tokens_est": 11560,
+  "total_output_tokens_est": 4010,
+  "pattern_type_distribution": {
+    "extraction": 12,
+    "mapping": 8,
+    "spatial_transform": 7,
+    "word_interpretation": 6,
+    "cipher": 3,
+    "counting": 3,
+    "encoding": 3,
+    "indexing": 2,
+    "pattern_recognition": 1,
+    "ordering": 1,
+    "anagram": 1
+  },
+  "seed": 42,
+  "timestamp": 1786427774.8643403
+}

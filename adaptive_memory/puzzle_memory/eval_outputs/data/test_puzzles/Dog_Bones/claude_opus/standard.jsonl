@@ -1,0 +1,30 @@
+{
+  "title": "Dog_Bones",
+  "flavor_text": "The neighbor dogs, Festus the Mastiff and his friend Klondike the Alaskan Husky, have been spending a lot of their time burying bones in the park. See if you can “dig up” the locations of all the bones in this grid, then feel around for something else that Betty the Maltese wishes Festus and Klondike would learn to do instead. Each number represents the number of bones that can be found adjacent to it. (including diagonally). No bones will be found in cells containing a number. ",
+  "solution": "NEW TRICKS",
+  "reasoning": [
+    {
+      "explanation": "Mark cells with numbers and identify adjacent empty cells to find cells that could contain bones.",
+      "figure": null
+    },
+    {
+      "explanation": "Use logic to place bones in the grid by marking cells where adjacent counts match, resulting in a completed bone layout.",
+      "figure": "figure1.png"
+    },
+    {
+      "explanation": "Translate the pattern of bone placements into braille by mapping bone patterns to braille dots, which reveals the answer 'NEW TRICKS'.",
+      "figure": null
+    }
+  ],
+  "modality": [
+    "text",
+    "visual",
+    "structured"
+  ],
+  "skills": [
+    "logic",
+    "spatial"
+  ],
+  "prompt": "\nYour task is to solve the following puzzle. The attached images are presented in the order\nthey are referenced in the text.\n\nThe puzzle's title is: Dog_Bones\nThe puzzle's flavor text is: The neighbor dogs, Festus the Mastiff and his friend Klondike the Alaskan Husky, have been spending a lot of their time burying bones in the park. See if you can “dig up” the locations of all the bones in this grid, then feel around for something else that Betty the Maltese wishes Festus and Klondike would learn to do instead. Each number represents the number of bones that can be found adjacent to it. (including diagonally). No bones will be found in cells containing a number. \n\n---\nWrite out a step-by-step solution to the puzzle. At the end of your solution, write your\nanswer in the following format:\nAnswer: <answer>\n",
+  "raw_output": ""
+}

@@ -1,0 +1,36 @@
+{
+  "title": "Averted",
+  "flavor_text": "When the royal family of Crete was subject to destruction by Neptune's Kraken (events recounted in the Mozart opera Idomeneo re di Creta ossia Ilia e Idamante, which otherwise has little to do with this puzzle), the Royal Mathemagician produced a plan to protect the palace grounds and the royal family. Unfortunately the only surviving record of these plans is the following sketch indicating the placement of eleven lanterns to light up the palace grounds. That sketch is reproduced below. Can you solve it and unscramble the result to determine the monster's weakness?",
+  "solution": "PHOTOPHOBIA",
+  "reasoning": [
+    {
+      "explanation": "Notice the grid puzzle is an Akari puzzle and place the lanterns down to solve the Akari.",
+      "figure": "figure1.png"
+    },
+    {
+      "explanation": "Manipulate/Multiple the row and column numbers of each lantern to produce a number.",
+      "figure": null
+    },
+    {
+      "explanation": "Extract the letters from lanterns using A1Z26.",
+      "figure": null
+    },
+    {
+      "explanation": "Solve the anagram of letters to get \"PHOTOPHOBIA\", the final answer.",
+      "figure": null
+    }
+  ],
+  "modality": [
+    "text",
+    "visual",
+    "structured"
+  ],
+  "skills": [
+    "logic",
+    "wordplay",
+    "spatial",
+    "commonsense"
+  ],
+  "prompt": "\nYour task is to solve the following puzzle. The attached images are presented in the order\nthey are referenced in the text.\n\nThe puzzle's title is: Averted\nThe puzzle's flavor text is: When the royal family of Crete was subject to destruction by Neptune's Kraken (events recounted in the Mozart opera Idomeneo re di Creta ossia Ilia e Idamante, which otherwise has little to do with this puzzle), the Royal Mathemagician produced a plan to protect the palace grounds and the royal family. Unfortunately the only surviving record of these plans is the following sketch indicating the placement of eleven lanterns to light up the palace grounds. That sketch is reproduced below. Can you solve it and unscramble the result to determine the monster's weakness?\n\n---\nWrite out a step-by-step solution to the puzzle. At the end of your solution, write your\nanswer in the following format:\nAnswer: <answer>\n",
+  "raw_output": ""
+}

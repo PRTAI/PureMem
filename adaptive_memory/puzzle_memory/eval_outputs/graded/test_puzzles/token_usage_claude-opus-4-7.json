@@ -1,0 +1,9 @@
+{
+  "model": "claude-opus-4-7",
+  "reasoner": "memory_augmented",
+  "n_puzzles": 10,
+  "total_tokens": 3367,
+  "prompt_tokens": 2333,
+  "completion_tokens": 1034,
+  "avg_tokens_per_puzzle": 336
+}

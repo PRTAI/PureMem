@@ -1,0 +1,39 @@
+{
+  "title": "Our Seven Kingdoms",
+  "flavor_text": "Just like George R. R. Martin’s fictional land of Westeros, the world of Puzzled Pint can be arbitrarily divided into seven regions. Study the coats-of-arms below to learn which House rules each Kingdom, then follow the raven flights described in the narrative to discover what prevents these leaders from seeing clearly.",
+  "solution": "CLOUDS",
+  "reasoning": [
+    {
+      "explanation": "Relate each kingdom to the bolded words in the narrative, giving us GREAT BRITAIN -- Great Britain, Union Jack, English; EUROPE -- Europe, Twelve Stars, Goldstars, SOUTH AFRICA -- Y'Stripe, Six-Colors…, South Africa, WESTERN PROVINCES -- Doughnuts, Sprinkles, Sugary Circle; CENTRAL STATES -- Bootspur, Cowboy, Central States, Black Hats; EASTERN COLONIES -- Terrier, Blackdog, Eastern Colonies, Tartanscarf; NEW ZEALAND -- Kiwi, Flightless.",
+      "figure": null
+    },
+    {
+      "explanation": "Based on the association between bolded words and the kingdoms, connect the kingdoms based on the narrative.",
+      "figure": "figure_1.png"
+    },
+    {
+      "explanation": "For each paragraph of the narrative, notice that the connection pattern forms a letter.",
+      "figure": null
+    },
+    {
+      "explanation": "Identify the letters formed by the connections in each paragraph, which gives C, L, O, U, D, S.",
+      "figure": null
+    },
+    {
+      "explanation": "Combine the letters to get the answer, CLOUDS.",
+      "figure": null
+    }
+  ],
+  "modality": [
+    "text",
+    "visual",
+    "structured"
+  ],
+  "skills": [
+    "logic",
+    "spatial",
+    "commonsense"
+  ],
+  "prompt": "\nYour task is to solve the following puzzle. The attached images are presented in the order\nthey are referenced in the text.\n\nThe puzzle's title is: Our Seven Kingdoms\nThe puzzle's flavor text is: Just like George R. R. Martin’s fictional land of Westeros, the world of Puzzled Pint can be arbitrarily divided into seven regions. Study the coats-of-arms below to learn which House rules each Kingdom, then follow the raven flights described in the narrative to discover what prevents these leaders from seeing clearly.\n\n---\nWrite out a step-by-step solution to the puzzle. At the end of your solution, write your\nanswer in the following format:\nAnswer: <answer>\n",
+  "raw_output": ""
+}

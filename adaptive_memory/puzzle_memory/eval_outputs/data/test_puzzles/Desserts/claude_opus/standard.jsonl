@@ -1,0 +1,61 @@
+{
+  "title": "Desserts",
+  "flavor_text": "There are 8 different desserts for today's afternoon tea! Our chef likes to use bold flavors in his desserts, and has a 4 by 4 spice rack to stay organized. In his carelessness, he lost his recipe book, but fortunately he has a very imaginative visual memory. For each dessert, he remembers how many spices he uses from each row and from each column. For each spice, he also remembers how many cakes it's used in and how many cookies it's used in. He remembers that the macarons cookies (mixing bowl on the left) do not use espresso, while the Victoria sponge cake (on the bottom-left) does use garam masala. To be efficient, he uses a circular countertop with the eight mixing bowls around him so that cakes and cookies are alternating, and then he adds each spice simultaneously to all desserts using both hands! (He wonders how this must look when viewed from above!) What's one ingredient that won't be going in the desserts?",
+  "solution": "EGG SHELL",
+  "reasoning": [
+    {
+      "explanation": "This is a grid-filling logic puzzle where you need to determine which of the 16 spices (in a 4×4 grid) are used in each of the 8 desserts.",
+      "figure": null
+    },
+    {
+      "explanation": "The numbers around each mixing bowl indicate how many spices from each row and column are used in that particular dessert.",
+      "figure": null
+    },
+    {
+      "explanation": "The tables at the top provide additional constraints: for each spice position, how many cakes and how many cookies use that ingredient.",
+      "figure": null
+    },
+    {
+      "explanation": "Start by filling in dots (representing 'not used') in all rows and columns that have a 0, which immediately solves the northern and northwestern grids.",
+      "figure": null
+    },
+    {
+      "explanation": "Use the given constraints to work through each dessert grid: the macarons don't use espresso, and the Victoria sponge cake uses garam masala.",
+      "figure": null
+    },
+    {
+      "explanation": "Fill in each 4×4 grid for the 8 desserts, ensuring that the row and column totals match the numbers given for each dessert.",
+      "figure": null
+    },
+    {
+      "explanation": "After completing all 8 grids, notice that each position in the spice rack grid has exactly two cardinal directions (desserts) where that spice is used.",
+      "figure": null
+    },
+    {
+      "explanation": "The hint about the chef adding spices with both hands and wondering how it looks from above suggests semaphore signaling.",
+      "figure": null
+    },
+    {
+      "explanation": "Interpret the pattern of which desserts use each spice as semaphore signals, where the chef's arms point to the directions where the spice is used.",
+      "figure": null
+    },
+    {
+      "explanation": "Reading these semaphore signals, starting from the top-left spice (Allspice) and proceeding through each position in the grid, spells out 'ANSWER IS EGG SHELL'.",
+      "figure": null
+    },
+    {
+      "explanation": "Therefore, EGG SHELL is the ingredient that won't be going in the desserts.",
+      "figure": null
+    }
+  ],
+  "modality": [
+    "structured",
+    "visual"
+  ],
+  "skills": [
+    "logic",
+    "cryptic"
+  ],
+  "prompt": "\nYour task is to solve the following puzzle. The attached images are presented in the order\nthey are referenced in the text.\n\nThe puzzle's title is: Desserts\nThe puzzle's flavor text is: There are 8 different desserts for today's afternoon tea! Our chef likes to use bold flavors in his desserts, and has a 4 by 4 spice rack to stay organized. In his carelessness, he lost his recipe book, but fortunately he has a very imaginative visual memory. For each dessert, he remembers how many spices he uses from each row and from each column. For each spice, he also remembers how many cakes it's used in and how many cookies it's used in. He remembers that the macarons cookies (mixing bowl on the left) do not use espresso, while the Victoria sponge cake (on the bottom-left) does use garam masala. To be efficient, he uses a circular countertop with the eight mixing bowls around him so that cakes and cookies are alternating, and then he adds each spice simultaneously to all desserts using both hands! (He wonders how this must look when viewed from above!) What's one ingredient that won't be going in the desserts?\n\n---\nWrite out a step-by-step solution to the puzzle. At the end of your solution, write your\nanswer in the following format:\nAnswer: <answer>\n",
+  "raw_output": ""
+}

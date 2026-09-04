@@ -1,0 +1,49 @@
+{
+  "title": "Jurassic Park",
+  "flavor_text": "Oh no! All the dinosaurs have escaped Jurassic Park and Dr Ellie Sattler has to go across the park and escape the raptors to get to the maintenance shed. She has to find all the switch components through the darkness. Can you help Ellie find the SWITCH in the dark? Once Ellie has found all the switches she needs to feel for the primer handle and flick the main switch. Help Ellie reset the power to learn what Ellie will miss from Isla Nublar.",
+  "solution": "TRICERATOPS",
+  "reasoning": [
+    {
+      "explanation": "The puzzle presents a 9x8 letter grid and mentions finding a 'SWITCH' in the dark.",
+      "figure": null
+    },
+    {
+      "explanation": "We need to find the letters S, W, I, T, C, and H hidden in the grid of letters.",
+      "figure": null
+    },
+    {
+      "explanation": "Looking at the grid, we need to identify all instances of the letters that make up 'SWITCH'.",
+      "figure": null
+    },
+    {
+      "explanation": "After marking all the S, W, I, T, C, and H letters in the grid, we notice they create a pattern.",
+      "figure": "figure1.png"
+    },
+    {
+      "explanation": "This pattern resembles Braille dots when the grid is divided into 3x2 sections.",
+      "figure": null
+    },
+    {
+      "explanation": "Each 3x2 section of the grid contains some of the letters from 'SWITCH', forming Braille patterns.",
+      "figure": null
+    },
+    {
+      "explanation": "Reading these Braille patterns from left to right, top to bottom spells out 'TRICERATOPS'.",
+      "figure": null
+    },
+    {
+      "explanation": "The clue to use Braille comes from the instruction to 'feel for the primer handle' - referring to using touch to read Braille.",
+      "figure": null
+    }
+  ],
+  "modality": [
+    "text",
+    "structured"
+  ],
+  "skills": [
+    "logic",
+    "cryptic"
+  ],
+  "prompt": "\nYour task is to solve the following puzzle. The attached images are presented in the order\nthey are referenced in the text.\n\nThe puzzle's title is: Jurassic Park\nThe puzzle's flavor text is: Oh no! All the dinosaurs have escaped Jurassic Park and Dr Ellie Sattler has to go across the park and escape the raptors to get to the maintenance shed. She has to find all the switch components through the darkness. Can you help Ellie find the SWITCH in the dark? Once Ellie has found all the switches she needs to feel for the primer handle and flick the main switch. Help Ellie reset the power to learn what Ellie will miss from Isla Nublar.\n\n---\nWrite out a step-by-step solution to the puzzle. At the end of your solution, write your\nanswer in the following format:\nAnswer: <answer>\n",
+  "raw_output": ""
+}
